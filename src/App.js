@@ -323,7 +323,7 @@ class App extends Component{
                               src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png "
                               alt="timer"
                               className="timer-img"/>
-                            <p className="time">{time}< sec/p>  
+                            <p className="time">{time} sec</p>  
                         </li>
                     </ul>   
                 </nav>
@@ -336,9 +336,9 @@ class App extends Component{
                                     <li key={eachValue.tabId}>
                                         <button 
                                           type="button"
-                                          className={'tab-button ${
+                                          className={tab-button ${
                                               category===eachValue.tabId?'highlight-text':""
-                                              }'}
+                                              }}
                                               onClick={()=>this.clickTab(eachValue.tabId)}
                                         >
                                           {eachValue.displayText}
