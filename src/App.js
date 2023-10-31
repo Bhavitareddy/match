@@ -1,4 +1,5 @@
-import './App.css'
+import {Component}  from 'react'
+import '../App.css'
 
 // These are the lists used in the application. You can move them to any component needed.
 const tabsList = [
@@ -279,7 +280,7 @@ class App extends Component{
         const {imageUrl}=imageValue[0]
         if(imageUrl===imgUrl){
             const newImgUrl=
-             imagesList[Math.floor(Math.random()* imagesList.length)].imageUrl
+             imagesList[Math.floor(Math.random()* imagesList.length)].imageUrlimageUrl
             console.log(newImgUrl)
             this.setState(prevState=>({
                 score:prevState.score+1,
